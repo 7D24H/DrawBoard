@@ -63,22 +63,25 @@ public class Data {
         int meanX = 0;
         int meanY = 0;
         int len = tempXStartList.size();
-        for(Integer x:tempXStartList){
-            sumX+=x;
-        }
-        for(Integer y:tempYStartList){
-            sumY+=y;
-        }
-        meanX =(int)(sumX/len);
-        meanY = (int)(sumY/len);
-        System.out.println("CENTER"+meanX+" "+meanY);
+        if(len!=0){
+            for(Integer x:tempXStartList){
+                sumX+=x;
+            }
+            for(Integer y:tempYStartList){
+                sumY+=y;
+            }
+            meanX =(int)(sumX/len);
+            meanY = (int)(sumY/len);
+            System.out.println("CENTER"+meanX+" "+meanY);
 
-        //写入文件
-        writeFile(meanX+" ",centerPointLabel,true);
-        writeFile(meanY+",",centerPointLabel,true);
+            //写入文件
+            writeFile(meanX+" ",centerPointLabel,true);
+            writeFile(meanY+",",centerPointLabel,true);
 
-        centerPoint.add(meanX);
-        centerPoint.add(meanY);
+            centerPoint.add(meanX);
+            centerPoint.add(meanY);
+        }
+
         return centerPoint;
     }
 
