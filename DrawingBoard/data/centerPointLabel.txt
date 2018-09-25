@@ -1,7 +1,1 @@
-510 273,Triangle;
-606 476,Square;
-955 348,Star;
-658 722,Round;
-363 354,Hexagon;
-371 689,Heptagon;
-1085 658,Don't know;
+1056 579,Triangle;

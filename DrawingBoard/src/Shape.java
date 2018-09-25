@@ -25,7 +25,7 @@ public class Shape {
             case 3:
                 return "Triangle";
             case 4:
-                return "Square";
+                return "Rectangle";
             case 5:
                 return "Star";
             case 6:

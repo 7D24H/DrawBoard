@@ -226,8 +226,8 @@ public class DrawBoard extends JFrame{
                 return 80;
             case "Triangle":
                 return 100;
-            case "Square":
-                return 90;
+            case "Rectangle":
+                return 120;
             case "Star":
                 return 50;
             case "Hexagon":
